@@ -1,11 +1,10 @@
-#include <stdoi.h>
-/**
- * main - entry point
- *
- * Return: 0 after printing the function
- */
-int main(void)
+#include <stdio.h>
+#include <string.h>
+
+int main()
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+   char string[40];
+   strcpy(str, "This is a test string");
+   puts(string);
+   return 0;
 }
