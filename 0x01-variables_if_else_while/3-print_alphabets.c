@@ -1,34 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
+  * main - Prints combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int d, p;
+	int c, i;
 
-	for (d = '0'; d < '9'; d++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			if (p != d)
+			if (c < i)
 			{
-				putchar(d);
-				putchar(p);
+				putchar(c);
+				putchar(i);
 
-				if (d == '8' && p == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
