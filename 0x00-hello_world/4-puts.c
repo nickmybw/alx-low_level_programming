@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-
-=======
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+
 	return (0);
 }
->>>>>>> 60b5423cf4c5a0f8b9ce45f37ee3efe8f5288afb
